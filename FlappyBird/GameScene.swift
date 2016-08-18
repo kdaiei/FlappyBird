@@ -329,8 +329,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             let random_y = arc4random_uniform(UInt32(random_y_range))
             
             var under_wall_y = CGFloat(0)
-            // アイテムの位置を決定（３割の確率で表示）
-            if arc4random_uniform(UInt32(10)) < 10 {
+            // アイテムの位置を決定（5割の確率で表示）
+            if arc4random_uniform(UInt32(10)) < 5 {
                 under_wall_y = CGFloat(under_item_lowest_y + random_y)
             }
             
@@ -394,7 +394,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             print("GetItem")
             
             // 効果音を鳴らす
-            self.runAction(self.sound)
+            //self.runAction(self.sound)
             
             // アイテムスコアを更新
             itemScore += 1
