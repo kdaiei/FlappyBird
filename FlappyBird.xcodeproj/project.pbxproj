@@ -12,6 +12,9 @@
 		2448FF511D63EB320026B63E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2448FF4F1D63EB320026B63E /* Main.storyboard */; };
 		2448FF531D63EB320026B63E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2448FF521D63EB320026B63E /* Assets.xcassets */; };
 		2448FF561D63EB320026B63E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2448FF541D63EB320026B63E /* LaunchScreen.storyboard */; };
+		2448FF5E1D63EB890026B63E /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2448FF5D1D63EB890026B63E /* SpriteKit.framework */; };
+		2448FF601D63EFCD0026B63E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2448FF5F1D63EFCD0026B63E /* GameScene.swift */; };
+		2448FF681D64ABB90026B63E /* getItem.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2448FF671D64ABB90026B63E /* getItem.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		2448FF521D63EB320026B63E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2448FF551D63EB320026B63E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2448FF571D63EB320026B63E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2448FF5D1D63EB890026B63E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		2448FF5F1D63EFCD0026B63E /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		2448FF671D64ABB90026B63E /* getItem.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = getItem.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2448FF5E1D63EB890026B63E /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +45,7 @@
 		2448FF3F1D63EB320026B63E = {
 			isa = PBXGroup;
 			children = (
+				2448FF5D1D63EB890026B63E /* SpriteKit.framework */,
 				2448FF4A1D63EB320026B63E /* FlappyBird */,
 				2448FF491D63EB320026B63E /* Products */,
 			);
@@ -56,10 +64,12 @@
 			children = (
 				2448FF4B1D63EB320026B63E /* AppDelegate.swift */,
 				2448FF4D1D63EB320026B63E /* ViewController.swift */,
+				2448FF5F1D63EFCD0026B63E /* GameScene.swift */,
 				2448FF4F1D63EB320026B63E /* Main.storyboard */,
 				2448FF521D63EB320026B63E /* Assets.xcassets */,
 				2448FF541D63EB320026B63E /* LaunchScreen.storyboard */,
 				2448FF571D63EB320026B63E /* Info.plist */,
+				2448FF671D64ABB90026B63E /* getItem.mp3 */,
 			);
 			path = FlappyBird;
 			sourceTree = "<group>";
@@ -96,6 +106,7 @@
 				TargetAttributes = {
 					2448FF471D63EB320026B63E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = NWDHFA97DT;
 					};
 				};
 			};
@@ -122,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2448FF681D64ABB90026B63E /* getItem.mp3 in Resources */,
 				2448FF561D63EB320026B63E /* LaunchScreen.storyboard in Resources */,
 				2448FF531D63EB320026B63E /* Assets.xcassets in Resources */,
 				2448FF511D63EB320026B63E /* Main.storyboard in Resources */,
@@ -135,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2448FF601D63EFCD0026B63E /* GameScene.swift in Sources */,
 				2448FF4E1D63EB320026B63E /* ViewController.swift in Sources */,
 				2448FF4C1D63EB320026B63E /* AppDelegate.swift in Sources */,
 			);
@@ -249,10 +262,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FlappyBird/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.hirotaka.kobayashi.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +276,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FlappyBird/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.hirotaka.kobayashi.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +305,7 @@
 				2448FF5C1D63EB320026B63E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
