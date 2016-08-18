@@ -394,7 +394,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             print("GetItem")
             
             // 効果音を鳴らす
-            //self.runAction(self.sound)
+            self.runAction(self.sound)
             
             // アイテムスコアを更新
             itemScore += 1
