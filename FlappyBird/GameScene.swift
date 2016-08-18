@@ -398,7 +398,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             // アイテムスコアを更新
             itemScore += 1
-            itemLabelNode.text = "Item Score:\(score)"
+            itemLabelNode.text = "Item Score:\(itemScore)"
 
             // アイテムを削除
             contact.bodyA.node?.removeFromParent()
